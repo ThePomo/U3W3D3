@@ -32,6 +32,7 @@ const calcolaIVA = (prezzo: number): number => {
     return prezzo + prezzo * iva;
 };
 console.log(calcolaIVA(100));
+
 // 6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.
 console.log("----Esercizio 6-------");
 const Lunghezza = (str1: string, str2: string): number => {
@@ -42,16 +43,44 @@ console.log(Lunghezza("Hello","Typescript"));
 
 // 7) Cos'è un Type Union e come si scrive?
 console.log("----Esercizio 7-------");
+console.log("grazie ad union si possono definire variabili che contengono valori di tipi differenti e si scrive con | (operatore pipe)che unisce i vari tipi.");
+console.log("la sintassi esatta è: let x: tipo1 | tipo 2 | tipo3 |tipo 4;");
+
 
 
 // 8) Crea una variabile che possa contenere un numero, null o undefined.
+console.log("----Esercizio 8-------");
+let value: number | null | undefined;
+
+value = 42;
+console.log(value);
+
+value = null
+console.log(value);
+
+value= undefined
+console.log(value);
+
+
 
 // 9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.
+console.log("----Esercizio 9-------");
+type Giorno = "Lunedì" | "Martedì" | "Mercoledì" | "Giovedì" | "Venerdì" | "Sabato" | "Domenica";
+console.log("fatto guardare codice");
 
 // 10) Tipizza il seguente array di numeri nei due modi possibili:
 // const numbers = [1, 2, 3]
+console.log("----Esercizio 10-------");
+const number: number[] = [1, 2, 3];
+const numbers: Array<number> = [1, 2, 3];
+console.log(number);
+console.log(numbers);
+
 
 // 11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.
+console.log("----Esercizio 11-------");
+const tupla: [string, string, string,string, number, string] = ["Ciao", "sono", "Giuseppe","ho",30 ,"anni"];
+console.log(tupla);
 
 // 12) Qual è la differenza tra type e interface?
 

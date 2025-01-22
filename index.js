@@ -37,11 +37,31 @@ var Lunghezza = function (str1, str2) {
 console.log(Lunghezza("Hello", "Typescript"));
 // 7) Cos'è un Type Union e come si scrive?
 console.log("----Esercizio 7-------");
+console.log("grazie ad union si possono definire variabili che contengono valori di tipi differenti e si scrive con | (operatore pipe)che unisce i vari tipi.");
+console.log("la sintassi esatta è: let x: tipo1 | tipo 2 | tipo3 |tipo 4;");
 // 8) Crea una variabile che possa contenere un numero, null o undefined.
+console.log("----Esercizio 8-------");
+var value;
+value = 42;
+console.log(value);
+value = null;
+console.log(value);
+value = undefined;
+console.log(value);
 // 9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.
+console.log("----Esercizio 9-------");
+console.log("fatto guardare codice");
 // 10) Tipizza il seguente array di numeri nei due modi possibili:
 // const numbers = [1, 2, 3]
+console.log("----Esercizio 10-------");
+var number = [1, 2, 3];
+var numbers = [1, 2, 3];
+console.log(number);
+console.log(numbers);
 // 11) Crea una tupla per definire un array di 5 elementi, i primi 3 devono essere stringhe e gli ultimi due numeri.
+console.log("----Esercizio 11-------");
+var tupla = ["Ciao", "sono", "Giuseppe", "ho", 30, "anni"];
+console.log(tupla);
 // 12) Qual è la differenza tra type e interface?
 // 13) Definisci un'interfaccia in TypeScript per un oggetto dotato di proprietà "firstname", "lastname", e "age".
 // 14) Crea un'interfaccia per un utente con email obbligatoria e telefono opzionale.
