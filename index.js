@@ -1,4 +1,6 @@
 // 1) Quali sono i tipi primitivi principali in TypeScript?
+console.log("----Esercizio 1-------");
+console.log("In typescript i tipi primivitivi sono gli stessi di js e sono: String-Number-boolean-Null-Undefined-Any");
 // 2) Crea tre variabili tipizzate: una stringa con il tuo nome, un numero con la tua età, e un booleano che indica se stai studiando TypeScript
 // 3) Tipizza il parametro della seguente funzione:
 // const greet = (name) => { return "Ciao " + name }
