@@ -32,10 +32,17 @@ const calcolaIVA = (prezzo: number): number => {
     return prezzo + prezzo * iva;
 };
 console.log(calcolaIVA(100));
-
 // 6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.
+console.log("----Esercizio 6-------");
+const Lunghezza = (str1: string, str2: string): number => {
+    const concatenato = str1 + str2;
+    return concatenato.length;
+};
+console.log(Lunghezza("Hello","Typescript"));
 
 // 7) Cos'è un Type Union e come si scrive?
+console.log("----Esercizio 7-------");
+
 
 // 8) Crea una variabile che possa contenere un numero, null o undefined.
 

@@ -29,7 +29,14 @@ var calcolaIVA = function (prezzo) {
 };
 console.log(calcolaIVA(100));
 // 6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.
+console.log("----Esercizio 6-------");
+var Lunghezza = function (str1, str2) {
+    var concatenato = str1 + str2;
+    return concatenato.length;
+};
+console.log(Lunghezza("Hello", "Typescript"));
 // 7) Cos'è un Type Union e come si scrive?
+console.log("----Esercizio 7-------");
 // 8) Crea una variabile che possa contenere un numero, null o undefined.
 // 9) Crea un tipo per rappresentare i giorni della settimana usando union di stringhe letterali.
 // 10) Tipizza il seguente array di numeri nei due modi possibili:
