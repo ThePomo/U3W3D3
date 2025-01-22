@@ -78,7 +78,26 @@ console.log(person.firstname);
 console.log(person.lastname);
 console.log(person.age);
 // 14) Crea un'interfaccia per un utente con email obbligatoria e telefono opzionale.
+console.log("----Esercizio 14-------");
+var user1 = {
+    email: "mariomario@gmail.com",
+};
+var user2 = {
+    email: "luigimario@gmail.com",
+    phone: "123-456-7890",
+};
+console.log(user1);
+console.log(user2);
 // 15) Crea un array tipizzato di oggetti "Studente" con nome e voto.
+console.log("----Esercizio 15-------");
+var studenti = [
+    { nome: "Mario", voto: 8 },
+    { nome: "Luigi", voto: 7 },
+    { nome: "Bowser", voto: 3 },
+];
+studenti.forEach(function (studente) {
+    console.log("Nome: ".concat(studente.nome, ", Voto: ").concat(studente.voto));
+});
 // 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
 // 18) Cosa sono i Generics in TypeScript?

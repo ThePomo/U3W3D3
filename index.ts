@@ -96,7 +96,7 @@ interface Person {
     lastname: string;
     age: number;
   }
-  
+
 const person: Person = {
     firstname: "Giuseppe",
     lastname: "Pomo",
@@ -108,9 +108,39 @@ const person: Person = {
   console.log(person.age);      
   
 // 14) Crea un'interfaccia per un utente con email obbligatoria e telefono opzionale.
+console.log("----Esercizio 14-------");
+interface User {
+    email: string;       // Email obbligatoria
+    phone?: string;      // Telefono opzionale
+  }
+  const user1: User = {
+    email: "mariomario@gmail.com",
+  };
+  
+  const user2: User = {
+    email: "luigimario@gmail.com",
+    phone: "123-456-7890",
+  };
+  
+  console.log(user1);
+  console.log(user2); 
 
 // 15) Crea un array tipizzato di oggetti "Studente" con nome e voto.
+console.log("----Esercizio 15-------");
+interface Studente {
+    nome: string;
+    voto: number;
+  }
 
+  const studenti: Studente[] = [
+    { nome: "Mario", voto: 8 },
+    { nome: "Luigi", voto: 7 },
+    { nome: "Bowser", voto: 3 },
+  ];
+  studenti.forEach((studente) => {
+    console.log(`Nome: ${studente.nome}, Voto: ${studente.voto}`);
+  });
+  
 // 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
 
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
