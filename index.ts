@@ -83,9 +83,30 @@ const tupla: [string, string, string,string, number, string] = ["Ciao", "sono", 
 console.log(tupla);
 
 // 12) Qual è la differenza tra type e interface?
+console.log("----Esercizio 12-------");
+console.log("in Ts sia type che interface sono utilizzati per definire forme di oggetti e strutture di tipi, ma ci sono alcune differenze come:");
+console.log("type viene utilizzato per definire alias di tipi quali i primitivi,unioni,tuple ecc");
+console.log("interface invece è progettato per definitre la forma di oggetti e si concentra su proprietà e metodi");
 
 // 13) Definisci un'interfaccia in TypeScript per un oggetto dotato di proprietà "firstname", "lastname", e "age".
+console.log("----Esercizio 13-------");
 
+interface Person {
+    firstname: string;
+    lastname: string;
+    age: number;
+  }
+  
+const person: Person = {
+    firstname: "Giuseppe",
+    lastname: "Pomo",
+    age: 30,
+  };
+  
+  console.log(person.firstname); 
+  console.log(person.lastname);  
+  console.log(person.age);      
+  
 // 14) Crea un'interfaccia per un utente con email obbligatoria e telefono opzionale.
 
 // 15) Crea un array tipizzato di oggetti "Studente" con nome e voto.
