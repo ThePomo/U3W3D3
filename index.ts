@@ -1,16 +1,37 @@
 // 1) Quali sono i tipi primitivi principali in TypeScript?
 console.log("----Esercizio 1-------");
-
 console.log ("In typescript i tipi primivitivi sono gli stessi di js e sono: String-Number-boolean-Null-Undefined-Any")
+
 // 2) Crea tre variabili tipizzate: una stringa con il tuo nome, un numero con la tua età, e un booleano che indica se stai studiando TypeScript
+console.log("----Esercizio 2-------");
+const nome: string = "Giuseppe";
+const età: number = 30; 
+const StudioTypeScript: boolean = true;
+console.log(`Il mio nome è ${nome}.Ho ${età} anni e sto studiando Typescript: ${StudioTypeScript}`);
 
 // 3) Tipizza il parametro della seguente funzione:
 // const greet = (name) => { return "Ciao " + name }
+console.log("----Esercizio 3-------");
+const greet = (name: string): string => {
+    return "Ciao " + name;
+};
+console.log(greet("Giuseppe"));
 
 // 4) Specifica il tipo di ritorno della seguente funzione:
 // const sum = (a: number, b: number) => { return a + b }
+console.log("----Esercizio 4-------");
+const sum = (a: number, b: number): number => {
+    return a + b;
+};
+console.log(sum(8, 6));
 
 // 5) Crea una funzione che accetti un prezzo e restituisca il prezzo con IVA (22%). Usa i tipi appropriati.
+console.log("----Esercizio 5-------");
+const calcolaIVA = (prezzo: number): number => {
+    const iva = 0.22;
+    return prezzo + prezzo * iva;
+};
+console.log(calcolaIVA(100));
 
 // 6) Crea una funzione che concateni due stringhe e restituisca la lunghezza totale.
 
