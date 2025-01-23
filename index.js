@@ -99,6 +99,7 @@ studenti.forEach(function (studente) {
     console.log("Nome: ".concat(studente.nome, ", Voto: ").concat(studente.voto));
 });
 // 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
+console.log("----Esercizio 16-------");
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
 // 18) Cosa sono i Generics in TypeScript?
 // 19) È possibile avere più tipi generici in un'interfaccia?

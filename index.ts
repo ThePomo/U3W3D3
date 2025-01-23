@@ -142,7 +142,7 @@ interface Studente {
   });
   
 // 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
-
+console.log("----Esercizio 16-------");
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
 
 // 18) Cosa sono i Generics in TypeScript?
